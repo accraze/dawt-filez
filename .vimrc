@@ -211,7 +211,7 @@ let g:DoxygenToolkit_paramTag_pre="@Param "
 let g:DoxygenToolkit_returnTag="@Returns   "
 let g:DoxygenToolkit_blockHeader="-------------------------------"
 let g:DoxygenToolkit_blockFooter="---------------------------------"
-let g:DoxygenToolkit_authorName="Vinit Kumar"
+let g:DoxygenToolkit_authorName="Andy Craze"
 
 
 "Nerdtree
