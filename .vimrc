@@ -203,17 +203,6 @@ let g:gist_clip_command = 'pbcopy'
 let g:gist_post_private = 1
 let g:gist_get_multiplefile = 1
 
-
-
-" Configuration
-let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
-let g:DoxygenToolkit_paramTag_pre="@Param "
-let g:DoxygenToolkit_returnTag="@Returns   "
-let g:DoxygenToolkit_blockHeader="-------------------------------"
-let g:DoxygenToolkit_blockFooter="---------------------------------"
-let g:DoxygenToolkit_authorName="Andy Craze"
-
-
 "Nerdtree
 nmap <C-u> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$']
