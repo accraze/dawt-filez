@@ -23,11 +23,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'vinitkumar/vim-tomorrow-theme'
-Plugin 'mrtazz/DoxygenToolkit.vim'
-Plugin 'rizzatti/dash.vim'
 Plugin 'Ack.vim'
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
 Plugin 'editorconfig/editorconfig-vim'
 
 
