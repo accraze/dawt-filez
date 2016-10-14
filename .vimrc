@@ -22,7 +22,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
-Plugin 'vinitkumar/vim-tomorrow-theme'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Ack.vim'
 Plugin 'editorconfig/editorconfig-vim'
 
