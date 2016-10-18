@@ -67,12 +67,6 @@ set mouse=a
 syntax on
 set autoread
 
-" Navigate panes easily
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
 set background=dark
 
 " disable ugly gtk stuff
