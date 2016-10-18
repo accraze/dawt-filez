@@ -121,6 +121,7 @@ set laststatus=2 " Always show status line
 set magic " Enable extended regexes.
 set nocompatible " Make vim more useful
 set noerrorbells " Disable error bells.
+set visualbell  " Prevent vim from beeping
 set nostartofline
 set noshowmode
 " set nowrap " Do not wrap lines.
