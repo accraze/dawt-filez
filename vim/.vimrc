@@ -25,6 +25,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Ack.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 
 """"""""""""""""""""""""""""""
@@ -65,6 +66,12 @@ set numberwidth=3
 set mouse=a
 syntax on
 set autoread
+
+" Navigate panes easily
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 set background=dark
 
