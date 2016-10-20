@@ -12,8 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
@@ -26,6 +24,14 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Ack.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 
 """"""""""""""""""""""""""""""
@@ -70,7 +76,10 @@ let g:easytags_suppress_ctags_warning = 1
 set guioptions-=r
 set guioptions-=L
 
-
+" vim-indent-guides
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
 
 " General
 
