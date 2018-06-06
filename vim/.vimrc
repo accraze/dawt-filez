@@ -13,11 +13,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'sjl/badwolf'
 Plugin 'tpope/vim-sensible'
 Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Ack.vim'
@@ -31,28 +31,42 @@ Plugin 'reedes/vim-colors-pencil'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'itchyny/lightline.vim'
-
+Plugin 'tell-k/vim-autopep8'
+Plugin 'fisadev/vim-isort'
+Plugin 'nvie/vim-flake8'
 
 """"""""""""""""""""""""""""""
+" vim-powerline symbols
+let g:airline_theme             = 'badwolf'
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
 
-"tagbar related settings
-set tags=./tags;,~/.vimtags
-+" Sensible defaults
-let g:easytags_events = ['BufReadPost', 'BufWritePost']
-let g:easytags_async = 1
-let g:easytags_dynamic_files = 2
-let g:easytags_resolve_links = 1
-let g:easytags_suppress_ctags_warning = 1
+
+" vim-powerline symbols
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
 
 " Disable the scrollbars
 set guioptions-=r
 set guioptions-=L
-
-" vim-indent-guides
-let g:indent_guides_guide_size = 1
-let g:indent_guides_color_change_percent = 3
-let g:indent_guides_enable_on_vim_startup = 1
 
 " General
 
@@ -61,7 +75,7 @@ set numberwidth=3
 set mouse=a
 syntax on
 set autoread
-
+set pastetoggle=<F2>
 set background=dark
 
 " disable ugly gtk stuff
@@ -199,6 +213,13 @@ let g:gist_get_multiplefile = 1
 "Nerdtree
 nmap <C-u> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$']
+
+" vim-indent-guides
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
+colorscheme gruvbox
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
