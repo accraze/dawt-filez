@@ -36,7 +36,7 @@ Plugin 'nvie/vim-flake8'
 
 """"""""""""""""""""""""""""""
 " vim-powerline symbols
-let g:airline_theme             = 'badwolf'
+let g:airline_theme             = 'gruvbox'
 let g:airline_enable_branch     = 1
 let g:airline_enable_syntastic  = 1
 
