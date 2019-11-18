@@ -84,3 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/anaconda/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin"
+alias noise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.02 80' 
