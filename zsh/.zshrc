@@ -85,3 +85,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/anaconda/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin"
 alias noise='play -n synth brownnoise synth pinknoise mix synth sine amod 0.02 80' 
+#
+# Use asdf version manager
+. /usr/local/opt/asdf/asdf.sh
